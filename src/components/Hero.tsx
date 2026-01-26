@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Sparkles, Zap, Bot } from "lucide-react";
+import { ArrowDown, Sparkles, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo_r2d2.png";
 
@@ -107,9 +107,9 @@ const Hero = () => {
             para impulsionar seu negócio.
           </motion.p>
 
-          {/* CTA Buttons */}
+          {/* CTA Button */}
           <motion.div 
-            className="flex flex-col sm:flex-row gap-4 mb-16"
+            className="flex flex-col sm:flex-row gap-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7 }}
@@ -121,37 +121,6 @@ const Hero = () => {
               <Zap className="w-5 h-5 mr-2" />
               Iniciar Projeto
             </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-primary/50 text-primary hover:bg-primary/10 px-8 py-6 text-lg"
-            >
-              <Bot className="w-5 h-5 mr-2" />
-              Ver Demonstração
-            </Button>
-          </motion.div>
-
-          {/* Stats */}
-          <motion.div 
-            className="grid grid-cols-3 gap-8 md:gap-16"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.9 }}
-          >
-            {[
-              { value: "50+", label: "Projetos IA" },
-              { value: "100+", label: "Agentes Criados" },
-              { value: "2M+", label: "Mensagens/mês" }
-            ].map((stat, index) => (
-              <motion.div 
-                key={index}
-                className="text-center"
-                whileHover={{ scale: 1.05 }}
-              >
-                <div className="text-3xl md:text-4xl font-bold text-gradient">{stat.value}</div>
-                <div className="text-sm text-muted-foreground">{stat.label}</div>
-              </motion.div>
-            ))}
           </motion.div>
         </motion.div>
 
