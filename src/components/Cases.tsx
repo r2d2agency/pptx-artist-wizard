@@ -1,7 +1,18 @@
 import { motion } from "framer-motion";
-import { Search, Send, Utensils, MessageSquare, LayoutGrid, Car, Scale, Palette } from "lucide-react";
+import { Send, Utensils, MessageSquare, LayoutGrid, Car, Scale, Palette, LucideIcon } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import gleegoIcon from "@/assets/gleego-icon.png";
+
+interface CaseItem {
+  icon?: LucideIcon;
+  customIcon?: string;
+  title: string;
+  tagline: string;
+  description: string;
+  tags: string[];
+  gradient: string;
+}
 
 const segments = [
   {
@@ -9,7 +20,7 @@ const segments = [
     description: "Soluções digitais que automatizam e escalam negócios",
     cases: [
       {
-        icon: Search,
+        customIcon: gleegoIcon,
         title: "Gleego",
         tagline: "Tenha leads infinitos",
         description: "Ferramenta de extração de leads das redes sociais, principalmente Google. Encontre seus clientes ideais de forma automatizada e escale suas vendas.",
@@ -144,11 +155,15 @@ const Cases = () => {
                     <CardHeader className="pb-4">
                       <div className="flex items-start justify-between">
                         <motion.div 
-                          className={`w-14 h-14 rounded-xl bg-gradient-to-br ${caseItem.gradient} p-3 mb-3`}
+                          className={`w-14 h-14 rounded-xl ${caseItem.customIcon ? '' : `bg-gradient-to-br ${caseItem.gradient}`} p-2 mb-3 overflow-hidden`}
                           whileHover={{ scale: 1.1, rotate: 5 }}
                           transition={{ type: "spring", stiffness: 300 }}
                         >
-                          <caseItem.icon className="w-full h-full text-white" />
+                          {caseItem.customIcon ? (
+                            <img src={caseItem.customIcon} alt={caseItem.title} className="w-full h-full object-contain" />
+                          ) : caseItem.icon ? (
+                            <caseItem.icon className="w-full h-full text-white" />
+                          ) : null}
                         </motion.div>
                       </div>
                       <CardTitle className="text-xl group-hover:text-gradient transition-all">
