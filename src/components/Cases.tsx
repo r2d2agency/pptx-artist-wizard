@@ -9,6 +9,7 @@ import pratoEmDobroIcon from "@/assets/prato-em-dobro-icon.ico";
 import plazaMotorsIcon from "@/assets/plaza-motors-icon.png";
 import bellifeIcon from "@/assets/bellife-icon.png";
 import acsilvAdvogadosIcon from "@/assets/acsilva-advogados-icon.png";
+import plazaMotorsRioPretoIcon from "@/assets/plaza-motors-riopreto-icon.png";
 
 interface CaseItem {
   icon?: LucideIcon;
@@ -72,7 +73,7 @@ const segments = [
     description: "Presença digital profissional para empresas",
     cases: [
       {
-        icon: Car,
+        customIcon: plazaMotorsRioPretoIcon,
         title: "Plaza Motors Rio Preto",
         tagline: "Agência automotiva digital",
         description: "Site institucional para agência automotiva especializada em venda de veículos semi-novos e zero km. Experiência premium para clientes exigentes.",
