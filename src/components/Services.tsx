@@ -1,18 +1,18 @@
 import { motion } from "framer-motion";
-import { Bot, MessageSquare, TrendingUp, Code, Cpu, Rocket } from "lucide-react";
+import { UserCheck, MessageSquare, TrendingUp, Code, Cpu, Rocket } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const services = [
   {
     icon: Cpu,
-    title: "Desenvolvimento IA",
-    description: "Criamos soluções personalizadas com inteligência artificial para automatizar processos e gerar insights valiosos para seu negócio.",
+    title: "Soluções com IA",
+    description: "Desenvolvemos sistemas inteligentes que incluem IA para facilitar sua rotina. Análises automatizadas, relatórios gerados por IA e insights que transformam dados em decisões estratégicas.",
     gradient: "from-primary to-cyan-400"
   },
   {
-    icon: MessageSquare,
-    title: "Agentes WhatsApp",
-    description: "Bots inteligentes que atendem 24/7, qualificam leads, agendam reuniões e vendem seus produtos automaticamente.",
+    icon: UserCheck,
+    title: "Funcionários Virtuais",
+    description: "Sua secretária virtual no WhatsApp. Funcionários virtuais que automatizam o atendimento, aprendem com cada conversa, respondem dúvidas e conduzem clientes até a conversão. Atendimento 24/7.",
     gradient: "from-green-400 to-emerald-500"
   },
   {
@@ -28,7 +28,7 @@ const services = [
     gradient: "from-orange-400 to-red-500"
   },
   {
-    icon: Bot,
+    icon: Rocket,
     title: "Automação Inteligente",
     description: "Conectamos ferramentas e automatizamos workflows complexos. Economize tempo e reduza erros operacionais.",
     gradient: "from-pink-400 to-rose-500"
