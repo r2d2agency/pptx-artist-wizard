@@ -6,10 +6,13 @@ import Features from "@/components/Features";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
+import AnalyticsScripts from "@/components/AnalyticsScripts";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background overflow-x-hidden">
+    <>
+      <AnalyticsScripts />
+      <div className="min-h-screen bg-background overflow-x-hidden">
       <Navbar />
       <main>
         <Hero />
@@ -20,7 +23,8 @@ const Index = () => {
       </main>
       <Footer />
       <FloatingWhatsApp />
-    </div>
+      </div>
+    </>
   );
 };
 
