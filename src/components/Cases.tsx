@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Search, Send, Utensils, MessageSquare, LayoutGrid } from "lucide-react";
+import { Search, Send, Utensils, MessageSquare, LayoutGrid, Car, Scale, Palette } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
@@ -43,6 +43,30 @@ const cases = [
     description: "Sistema de CRM com múltiplos Kanbans, gestão de prospects e usuários separados, automação de funil, mapa de leads, projetos e homologação.",
     tags: ["CRM", "Multi-Kanban", "Automação de Funil", "Mapa de Leads"],
     gradient: "from-indigo-500 to-violet-400"
+  },
+  {
+    icon: Car,
+    title: "Plaza Motors Rio Preto",
+    tagline: "Agência automotiva digital",
+    description: "Site institucional para agência automotiva especializada em venda de veículos semi-novos e zero km. Experiência premium para clientes exigentes.",
+    tags: ["Site Institucional", "Automotivo", "E-commerce"],
+    gradient: "from-slate-500 to-zinc-400"
+  },
+  {
+    icon: Scale,
+    title: "AC Silva Advogados",
+    tagline: "Dra. Amanda Cristina",
+    description: "Site profissional para escritório de advocacia. Presença digital elegante e confiável para atrair novos clientes e fortalecer a marca.",
+    tags: ["Site Institucional", "Advocacia", "Branding"],
+    gradient: "from-amber-600 to-yellow-500"
+  },
+  {
+    icon: Palette,
+    title: "Bellife",
+    tagline: "Franqueadora de estética",
+    description: "Criação completa de branding: identidade visual, logomarca, manual da marca e ícones. Harmonização Aesthetics com design sofisticado e elegante.",
+    tags: ["Branding", "Identidade Visual", "Manual de Marca", "Franquia"],
+    gradient: "from-[#1e3a5f] to-[#c9a962]"
   }
 ];
 
