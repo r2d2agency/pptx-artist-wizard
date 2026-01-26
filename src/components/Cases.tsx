@@ -157,7 +157,7 @@ const Cases = () => {
                     <CardHeader className="pb-4">
                       <div className="flex items-start justify-between">
                         <motion.div 
-                          className={`${caseItem.customIcon ? 'w-28 h-12' : 'w-14 h-14'} rounded-xl ${caseItem.customIcon ? '' : `bg-gradient-to-br ${caseItem.gradient}`} p-2 mb-3 overflow-hidden`}
+                          className={`${caseItem.customIcon ? 'w-36 h-16' : 'w-14 h-14'} rounded-xl ${caseItem.customIcon ? '' : `bg-gradient-to-br ${caseItem.gradient}`} p-2 mb-3 overflow-hidden`}
                           whileHover={{ scale: 1.1, rotate: caseItem.customIcon ? 0 : 5 }}
                           transition={{ type: "spring", stiffness: 300 }}
                         >
