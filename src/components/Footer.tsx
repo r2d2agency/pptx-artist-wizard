@@ -1,15 +1,12 @@
 import { motion } from "framer-motion";
-import { Linkedin, Instagram, Github, Twitter } from "lucide-react";
+import { Instagram } from "lucide-react";
 import logo from "@/assets/logo_r2d2.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Github, href: "#", label: "GitHub" }
+    { icon: Instagram, href: "https://www.instagram.com/r2d2.agency", label: "Instagram" }
   ];
 
   const links = [
