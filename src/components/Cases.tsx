@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 
 const segments = [
   {
-    title: "Ferramentas & SaaS",
+    title: "Aplicativos e Sistemas",
     description: "Soluções digitais que automatizam e escalam negócios",
     cases: [
       {
@@ -39,13 +39,7 @@ const segments = [
         description: "Sistema de CRM com múltiplos Kanbans, gestão de prospects e usuários separados, automação de funil, mapa de leads, projetos e homologação.",
         tags: ["CRM", "Multi-Kanban", "Automação de Funil", "Mapa de Leads"],
         gradient: "from-indigo-500 to-violet-400"
-      }
-    ]
-  },
-  {
-    title: "Apps & Plataformas",
-    description: "Aplicativos mobile e plataformas digitais",
-    cases: [
+      },
       {
         icon: Utensils,
         title: "Prato em Dobro",
@@ -57,7 +51,7 @@ const segments = [
     ]
   },
   {
-    title: "Sites Institucionais",
+    title: "Sites",
     description: "Presença digital profissional para empresas",
     cases: [
       {
@@ -79,7 +73,7 @@ const segments = [
     ]
   },
   {
-    title: "Branding & Identidade Visual",
+    title: "Identidade Visual",
     description: "Criação de marcas memoráveis",
     cases: [
       {
