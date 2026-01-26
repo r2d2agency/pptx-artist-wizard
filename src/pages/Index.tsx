@@ -5,6 +5,7 @@ import Cases from "@/components/Cases";
 import Features from "@/components/Features";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
         <CTA />
       </main>
       <Footer />
+      <FloatingWhatsApp />
     </div>
   );
 };
