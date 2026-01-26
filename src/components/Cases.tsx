@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import gleegoIcon from "@/assets/gleego-icon.png";
 import blasterIcon from "@/assets/blaster-icon.png";
+import whatsaleIcon from "@/assets/whatsale-icon.webp";
 
 interface CaseItem {
   icon?: LucideIcon;
@@ -37,7 +38,7 @@ const segments = [
         gradient: "from-green-500 to-emerald-400"
       },
       {
-        icon: MessageSquare,
+        customIcon: whatsaleIcon,
         title: "Whatsale",
         tagline: "CRM integrado ao WhatsApp",
         description: "Solução completa em CRM integrado ao WhatsApp com gestão de leads, Kanban visual e resposta direta pelo app. Tudo em um só lugar.",
