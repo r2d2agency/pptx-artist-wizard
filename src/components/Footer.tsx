@@ -83,7 +83,7 @@ const Footer = () => {
             © {currentYear} R2D2 Agency. Todos os direitos reservados.
           </p>
           <p className="mt-2 text-xs">
-            Desenvolvido com <span className="text-primary">♥</span> e muita <span className="text-gradient font-medium">Inteligência Artificial</span>
+            Desenvolvido por <span className="text-gradient font-medium">Thiago Nicodemos</span> com <span className="text-primary">♥</span> e muita <span className="text-gradient font-medium">Inteligência Artificial</span>
           </p>
         </motion.div>
       </div>
