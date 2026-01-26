@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import gleegoIcon from "@/assets/gleego-icon.png";
 import blasterIcon from "@/assets/blaster-icon.png";
 import whatsaleIcon from "@/assets/whatsale-icon.webp";
+import pratoEmDobroIcon from "@/assets/prato-em-dobro-icon.ico";
 
 interface CaseItem {
   icon?: LucideIcon;
@@ -54,7 +55,7 @@ const segments = [
         gradient: "from-indigo-500 to-violet-400"
       },
       {
-        icon: Utensils,
+        customIcon: pratoEmDobroIcon,
         title: "Prato em Dobro",
         tagline: "Descontos exclusivos",
         description: "Aplicativo de descontos em pratos de restaurantes premium. Experiências gastronômicas incríveis por preços acessíveis.",
