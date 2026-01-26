@@ -76,9 +76,9 @@ const CTA = () => {
             transition={{ delay: 0.3 }}
           >
             {[
-              { icon: MessageCircle, label: "WhatsApp", value: "+55 (11) 99999-9999" },
+              { icon: MessageCircle, label: "WhatsApp", value: "+55 (17) 99130-8048" },
               { icon: Mail, label: "E-mail", value: "contato@r2d2.agency" },
-              { icon: Phone, label: "Telefone", value: "+55 (11) 3333-3333" }
+              { icon: Phone, label: "Telefone", value: "+55 (17) 99130-8048" }
             ].map((contact, index) => (
               <motion.div
                 key={index}
