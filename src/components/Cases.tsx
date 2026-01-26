@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Search, Send, Utensils, MessageSquare } from "lucide-react";
+import { Search, Send, Utensils, MessageSquare, LayoutGrid } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
@@ -35,6 +35,14 @@ const cases = [
     description: "Solução completa em CRM integrado ao WhatsApp com gestão de leads, Kanban visual e resposta direta pelo app. Tudo em um só lugar.",
     tags: ["CRM", "WhatsApp", "Kanban", "Gestão de Leads"],
     gradient: "from-purple-500 to-pink-400"
+  },
+  {
+    icon: LayoutGrid,
+    title: "CRM Ener",
+    tagline: "CRM completo multi-kanban",
+    description: "Sistema de CRM com múltiplos Kanbans, gestão de prospects e usuários separados, automação de funil, mapa de leads, projetos e homologação.",
+    tags: ["CRM", "Multi-Kanban", "Automação de Funil", "Mapa de Leads"],
+    gradient: "from-indigo-500 to-violet-400"
   }
 ];
 
