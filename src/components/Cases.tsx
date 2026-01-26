@@ -7,6 +7,7 @@ import blasterIcon from "@/assets/blaster-icon.png";
 import whatsaleIcon from "@/assets/whatsale-icon.webp";
 import pratoEmDobroIcon from "@/assets/prato-em-dobro-icon.ico";
 import plazaMotorsIcon from "@/assets/plaza-motors-icon.png";
+import bellifeIcon from "@/assets/bellife-icon.png";
 
 interface CaseItem {
   icon?: LucideIcon;
@@ -100,7 +101,7 @@ const segments = [
         gradient: "from-slate-500 to-orange-400"
       },
       {
-        icon: Palette,
+        customIcon: bellifeIcon,
         title: "Bellife",
         tagline: "Franqueadora de estética",
         description: "Criação completa de branding: identidade visual, logomarca, manual da marca e ícones. Harmonização Aesthetics com design sofisticado e elegante.",
