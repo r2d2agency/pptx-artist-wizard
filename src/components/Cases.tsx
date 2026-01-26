@@ -6,6 +6,7 @@ import gleegoIcon from "@/assets/gleego-icon.png";
 import blasterIcon from "@/assets/blaster-icon.png";
 import whatsaleIcon from "@/assets/whatsale-icon.webp";
 import pratoEmDobroIcon from "@/assets/prato-em-dobro-icon.ico";
+import plazaMotorsIcon from "@/assets/plaza-motors-icon.png";
 
 interface CaseItem {
   icon?: LucideIcon;
@@ -90,6 +91,14 @@ const segments = [
     title: "Identidade Visual",
     description: "Criação de marcas memoráveis",
     cases: [
+      {
+        customIcon: plazaMotorsIcon,
+        title: "Plaza Motors",
+        tagline: "Branding automotivo premium",
+        description: "Criação completa de branding e identidade visual para agência automotiva. Logomarca, paleta de cores e materiais gráficos que transmitem sofisticação.",
+        tags: ["Branding", "Identidade Visual", "Automotivo"],
+        gradient: "from-slate-500 to-orange-400"
+      },
       {
         icon: Palette,
         title: "Bellife",
