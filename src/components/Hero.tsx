@@ -5,7 +5,7 @@ import logo from "@/assets/logo_r2d2.png";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background effects */}
       <div className="absolute inset-0 grid-pattern" />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-background" />
