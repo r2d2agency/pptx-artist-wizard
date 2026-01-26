@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
-import { Send, Utensils, MessageSquare, LayoutGrid, Car, Scale, Palette, LucideIcon } from "lucide-react";
+import { Utensils, MessageSquare, LayoutGrid, Car, Scale, Palette, LucideIcon } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import gleegoIcon from "@/assets/gleego-icon.png";
+import blasterIcon from "@/assets/blaster-icon.png";
 
 interface CaseItem {
   icon?: LucideIcon;
@@ -28,7 +29,7 @@ const segments = [
         gradient: "from-blue-500 to-cyan-400"
       },
       {
-        icon: Send,
+        customIcon: blasterIcon,
         title: "Blaster",
         tagline: "Envio em massa inteligente",
         description: "Ferramenta de envio de mensagens para WhatsApp em massa. Crie suas listas segmentadas e envie mensagens personalizadas com facilidade.",
