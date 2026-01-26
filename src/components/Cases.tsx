@@ -8,6 +8,7 @@ import whatsaleIcon from "@/assets/whatsale-icon.webp";
 import pratoEmDobroIcon from "@/assets/prato-em-dobro-icon.ico";
 import plazaMotorsIcon from "@/assets/plaza-motors-icon.png";
 import bellifeIcon from "@/assets/bellife-icon.png";
+import acsilvAdvogadosIcon from "@/assets/acsilva-advogados-icon.png";
 
 interface CaseItem {
   icon?: LucideIcon;
@@ -79,7 +80,7 @@ const segments = [
         gradient: "from-slate-500 to-zinc-400"
       },
       {
-        icon: Scale,
+        customIcon: acsilvAdvogadosIcon,
         title: "AC Silva Advogados",
         tagline: "Dra. Amanda Cristina",
         description: "Site profissional para escritório de advocacia. Presença digital elegante e confiável para atrair novos clientes e fortalecer a marca.",
