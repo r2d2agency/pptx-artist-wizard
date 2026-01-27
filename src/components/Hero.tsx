@@ -108,18 +108,6 @@ const Hero = () => {
 
         </motion.div>
 
-        {/* Scroll indicator */}
-        <motion.div 
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1, y: [0, 10, 0] }}
-          transition={{ delay: 1.2, y: { duration: 2, repeat: Infinity } }}
-        >
-          <a href="#servicos" className="flex flex-col items-center text-muted-foreground hover:text-primary transition-colors">
-            <span className="text-sm mb-2">Explorar</span>
-            <ArrowDown className="w-5 h-5" />
-          </a>
-        </motion.div>
       </div>
     </section>
   );
