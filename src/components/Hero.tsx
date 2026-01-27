@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Sparkles, Zap } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { ArrowDown, Sparkles } from "lucide-react";
 import logo from "@/assets/logo_r2d2.png";
 
 const Hero = () => {
@@ -107,21 +106,6 @@ const Hero = () => {
             para impulsionar seu negócio.
           </motion.p>
 
-          {/* CTA Button */}
-          <motion.div 
-            className="flex flex-col sm:flex-row gap-4"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.7 }}
-          >
-            <Button 
-              size="lg" 
-              className="bg-gradient-primary text-primary-foreground font-semibold px-8 py-6 text-lg glow-cyan hover:opacity-90 transition-all"
-            >
-              <Zap className="w-5 h-5 mr-2" />
-              Iniciar Projeto
-            </Button>
-          </motion.div>
         </motion.div>
 
         {/* Scroll indicator */}
