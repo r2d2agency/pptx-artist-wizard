@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, MessageCircle, Mail } from "lucide-react";
+import { ArrowRight, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const CTA = () => {
@@ -42,8 +42,8 @@ const CTA = () => {
             como a IA pode transformar sua empresa.
           </p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+          {/* CTA Button */}
+          <div className="flex justify-center mb-16">
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
               <a 
                 href="https://wa.me/5517991308048?text=Olá! Gostaria de saber mais sobre os serviços da R2D2 Agency."
@@ -52,7 +52,7 @@ const CTA = () => {
               >
                 <Button 
                   size="lg" 
-                  className="bg-gradient-primary text-primary-foreground font-semibold px-10 py-7 text-lg glow-cyan hover:opacity-90 transition-all w-full sm:w-auto"
+                  className="bg-gradient-primary text-primary-foreground font-semibold px-10 py-7 text-lg glow-cyan hover:opacity-90 transition-all"
                 >
                   <MessageCircle className="w-5 h-5 mr-2" />
                   Falar no WhatsApp
@@ -60,46 +60,29 @@ const CTA = () => {
                 </Button>
               </a>
             </motion.div>
-            
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
-              <Button 
-                size="lg" 
-                variant="outline"
-                className="border-primary/50 text-primary hover:bg-primary/10 px-10 py-7 text-lg w-full sm:w-auto"
-              >
-                <Mail className="w-5 h-5 mr-2" />
-                Enviar E-mail
-              </Button>
-            </motion.div>
           </div>
 
-          {/* Contact info cards */}
+          {/* Contact info card */}
           <motion.div 
-            className="grid sm:grid-cols-2 gap-6 max-w-xl mx-auto"
+            className="max-w-xs mx-auto"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
           >
-            {[
-              { icon: MessageCircle, label: "WhatsApp", value: "+55 (17) 99130-8048", href: "https://wa.me/5517991308048" },
-              { icon: Mail, label: "E-mail", value: "contato@r2d2.agency", href: "mailto:contato@r2d2.agency" }
-            ].map((contact, index) => (
-              <motion.a
-                key={index}
-                href={contact.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="glass rounded-xl p-6 text-center group hover:border-primary/50 transition-all cursor-pointer block"
-                whileHover={{ y: -5 }}
-              >
-                <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/30 transition-colors">
-                  <contact.icon className="w-6 h-6 text-primary" />
-                </div>
-                <div className="text-sm text-muted-foreground mb-1">{contact.label}</div>
-                <div className="font-medium text-foreground">{contact.value}</div>
-              </motion.a>
-            ))}
+            <motion.a
+              href="https://wa.me/5517991308048"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass rounded-xl p-6 text-center group hover:border-primary/50 transition-all cursor-pointer block"
+              whileHover={{ y: -5 }}
+            >
+              <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/30 transition-colors">
+                <MessageCircle className="w-6 h-6 text-primary" />
+              </div>
+              <div className="text-sm text-muted-foreground mb-1">WhatsApp</div>
+              <div className="font-medium text-foreground">+55 (17) 99130-8048</div>
+            </motion.a>
           </motion.div>
         </motion.div>
       </div>
