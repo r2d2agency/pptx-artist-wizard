@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
+
 import logo from "@/assets/logo_r2d2.png";
 
 const navLinks = [
   { label: "Serviços", href: "#servicos" },
-  { label: "Sobre", href: "#sobre" },
   { label: "Cases", href: "#cases" },
   { label: "Contato", href: "#contato" }
 ];
@@ -59,12 +58,6 @@ const Navbar = () => {
               ))}
             </nav>
 
-            {/* CTA Button - Desktop */}
-            <div className="hidden md:block">
-              <Button className="bg-gradient-primary text-primary-foreground font-semibold glow-cyan">
-                Fale Conosco
-              </Button>
-            </div>
 
             {/* Mobile Menu Button */}
             <button
@@ -107,18 +100,6 @@ const Navbar = () => {
                   {link.label}
                 </motion.a>
               ))}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.4 }}
-              >
-                <Button 
-                  className="bg-gradient-primary text-primary-foreground font-semibold px-8 py-6 text-lg glow-cyan"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Fale Conosco
-                </Button>
-              </motion.div>
             </motion.nav>
           </motion.div>
         )}

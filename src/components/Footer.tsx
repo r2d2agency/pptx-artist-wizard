@@ -11,7 +11,6 @@ const Footer = () => {
 
   const links = [
     { label: "Serviços", href: "#servicos" },
-    { label: "Sobre", href: "#sobre" },
     { label: "Cases", href: "#cases" },
     { label: "Contato", href: "#contato" }
   ];
