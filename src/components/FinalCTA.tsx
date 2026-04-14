@@ -5,19 +5,18 @@ import { Button } from "@/components/ui/button";
 const FinalCTA = () => {
   return (
     <section id="contato" className="py-28 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-secondary/5" />
-      <div className="absolute inset-0 grid-pattern opacity-40" />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/[0.04] via-background to-secondary/[0.04]" />
+      <div className="absolute inset-0 grid-pattern opacity-30" />
 
-      {/* Glows */}
       <motion.div
-        className="absolute top-0 left-1/3 w-[500px] h-[500px] rounded-full blur-[150px]"
-        style={{ background: 'radial-gradient(circle, hsl(210 100% 55% / 0.1), transparent)' }}
+        className="absolute top-0 left-1/3 w-[400px] h-[400px] rounded-full blur-[150px]"
+        style={{ background: 'radial-gradient(circle, hsl(175 85% 45% / 0.08), transparent)' }}
         animate={{ scale: [1, 1.15, 1] }}
         transition={{ duration: 8, repeat: Infinity }}
       />
       <motion.div
-        className="absolute bottom-0 right-1/3 w-[400px] h-[400px] rounded-full blur-[150px]"
-        style={{ background: 'radial-gradient(circle, hsl(42 80% 55% / 0.08), transparent)' }}
+        className="absolute bottom-0 right-1/3 w-[350px] h-[350px] rounded-full blur-[150px]"
+        style={{ background: 'radial-gradient(circle, hsl(265 80% 60% / 0.06), transparent)' }}
         animate={{ scale: [1.1, 1, 1.1] }}
         transition={{ duration: 8, repeat: Infinity, delay: 2 }}
       />
@@ -36,7 +35,7 @@ const FinalCTA = () => {
           </h2>
 
           <p className="text-lg text-muted-foreground mb-10 max-w-xl mx-auto">
-            Fale com nossos especialistas e descubra como podemos construir 
+            Fale com nossos especialistas e descubra como podemos construir
             a infraestrutura tecnológica ideal para o seu negócio.
           </p>
 
@@ -48,7 +47,7 @@ const FinalCTA = () => {
             >
               <Button
                 size="lg"
-                className="bg-gradient-primary text-primary-foreground font-semibold px-10 py-7 text-lg glow-blue hover:opacity-90 transition-all"
+                className="bg-gradient-primary text-primary-foreground font-semibold px-10 py-7 text-lg glow-cyan hover:opacity-90 transition-all"
               >
                 <MessageCircle className="w-5 h-5 mr-2" />
                 Falar com especialista
@@ -57,9 +56,8 @@ const FinalCTA = () => {
             </a>
           </motion.div>
 
-          {/* WhatsApp info */}
           <motion.div
-            className="mt-10"
+            className="mt-8"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
