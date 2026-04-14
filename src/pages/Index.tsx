@@ -1,9 +1,11 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import Services from "@/components/Services";
-import Cases from "@/components/Cases";
-import Features from "@/components/Features";
-import CTA from "@/components/CTA";
+import Ecosystem from "@/components/Ecosystem";
+import TechProducts from "@/components/TechProducts";
+import Portfolio from "@/components/Portfolio";
+import Positioning from "@/components/Positioning";
+import Authority from "@/components/Authority";
+import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import AnalyticsScripts from "@/components/AnalyticsScripts";
@@ -13,16 +15,18 @@ const Index = () => {
     <>
       <AnalyticsScripts />
       <div className="min-h-screen bg-background overflow-x-hidden">
-      <Navbar />
-      <main>
-        <Hero />
-        <Services />
-        <Cases />
-        <Features />
-        <CTA />
-      </main>
-      <Footer />
-      <FloatingWhatsApp />
+        <Navbar />
+        <main>
+          <Hero />
+          <Ecosystem />
+          <TechProducts />
+          <Portfolio />
+          <Positioning />
+          <Authority />
+          <FinalCTA />
+        </main>
+        <Footer />
+        <FloatingWhatsApp />
       </div>
     </>
   );
