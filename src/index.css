@@ -2,49 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-/* R2D2 Agency - Futuristic AI Theme */
+/* R2D2 Agency - Premium Tech Company */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
-    --background: 220 20% 4%;
+    --background: 222 30% 5%;
     --foreground: 210 40% 98%;
 
-    --card: 220 20% 8%;
+    --card: 222 25% 8%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 220 20% 8%;
+    --popover: 222 25% 8%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 190 100% 50%;
-    --primary-foreground: 220 20% 4%;
+    --primary: 210 100% 55%;
+    --primary-foreground: 222 30% 5%;
 
-    --secondary: 260 100% 65%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 42 80% 55%;
+    --secondary-foreground: 222 30% 5%;
 
-    --muted: 220 15% 15%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 222 20% 14%;
+    --muted-foreground: 215 20% 55%;
 
-    --accent: 190 100% 50%;
-    --accent-foreground: 220 20% 4%;
+    --accent: 210 100% 55%;
+    --accent-foreground: 222 30% 5%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 15% 20%;
-    --input: 220 15% 20%;
-    --ring: 190 100% 50%;
+    --border: 222 15% 16%;
+    --input: 222 15% 16%;
+    --ring: 210 100% 55%;
 
     --radius: 0.75rem;
 
     /* Custom gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(190 100% 50%), hsl(260 100% 65%));
-    --gradient-glow: linear-gradient(135deg, hsl(190 100% 50% / 0.3), hsl(260 100% 65% / 0.3));
-    --gradient-dark: linear-gradient(180deg, hsl(220 20% 4%), hsl(220 25% 8%));
+    --gradient-primary: linear-gradient(135deg, hsl(210 100% 55%), hsl(42 80% 55%));
+    --gradient-blue: linear-gradient(135deg, hsl(210 100% 55%), hsl(230 100% 65%));
+    --gradient-gold: linear-gradient(135deg, hsl(42 80% 55%), hsl(32 90% 50%));
+    --gradient-glow: linear-gradient(135deg, hsl(210 100% 55% / 0.2), hsl(42 80% 55% / 0.2));
+    --gradient-dark: linear-gradient(180deg, hsl(222 30% 5%), hsl(222 35% 7%));
   }
 
   .dark {
-    --background: 220 20% 4%;
+    --background: 222 30% 5%;
     --foreground: 210 40% 98%;
   }
 }
@@ -74,6 +76,16 @@
     background-image: var(--gradient-primary);
   }
 
+  .text-gradient-blue {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-blue);
+  }
+
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-gold);
+  }
+
   .bg-gradient-primary {
     background-image: var(--gradient-primary);
   }
@@ -82,40 +94,51 @@
     background-image: var(--gradient-glow);
   }
 
-  .glow-cyan {
-    box-shadow: 0 0 30px hsl(190 100% 50% / 0.3), 0 0 60px hsl(190 100% 50% / 0.1);
+  .glow-blue {
+    box-shadow: 0 0 30px hsl(210 100% 55% / 0.3), 0 0 60px hsl(210 100% 55% / 0.1);
   }
 
-  .glow-purple {
-    box-shadow: 0 0 30px hsl(260 100% 65% / 0.3), 0 0 60px hsl(260 100% 65% / 0.1);
+  .glow-gold {
+    box-shadow: 0 0 30px hsl(42 80% 55% / 0.3), 0 0 60px hsl(42 80% 55% / 0.1);
   }
 
   .glass {
-    @apply backdrop-blur-xl bg-card/50 border border-border/50;
+    @apply backdrop-blur-xl border border-border/50;
+    background: hsl(var(--card) / 0.5);
+  }
+
+  .glass-strong {
+    @apply backdrop-blur-2xl border border-border/30;
+    background: hsl(var(--card) / 0.8);
   }
 
   .grid-pattern {
     background-image: 
-      linear-gradient(to right, hsl(190 100% 50% / 0.05) 1px, transparent 1px),
-      linear-gradient(to bottom, hsl(190 100% 50% / 0.05) 1px, transparent 1px);
-    background-size: 50px 50px;
+      linear-gradient(to right, hsl(210 100% 55% / 0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(210 100% 55% / 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  .line-pattern {
+    background-image: linear-gradient(to right, hsl(210 100% 55% / 0.05) 1px, transparent 1px);
+    background-size: 80px 80px;
   }
 }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: hsl(220 20% 8%);
+  background: hsl(222 30% 5%);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(190 100% 50% / 0.5);
-  border-radius: 4px;
+  background: hsl(210 100% 55% / 0.4);
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(190 100% 50% / 0.7);
+  background: hsl(210 100% 55% / 0.6);
 }
